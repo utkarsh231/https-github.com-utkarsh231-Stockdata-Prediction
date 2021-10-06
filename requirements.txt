@@ -1,6 +1,5 @@
 absl-py==0.13.0
 gunicorn==20.1.0
-h5py==3.1.0
 html5lib @ file:///tmp/build/80754af9/html5lib_1593446221756/work
 ipykernel @ file:///C:/ci/ipykernel_1596190155316/work/dist/ipykernel-5.3.4-py3-none-any.whl
 kaggle==1.5.12
@@ -25,11 +24,6 @@ tensorboard-plugin-wit==1.8.0
 tensorflow==2.6.0
 tensorflow-estimator==2.6.0
 tensorflow-io==0.15.0
-termcolor==1.1.0
-terminado==0.9.4
-testpath @ file:///home/ktietz/src/ci/testpath_1611930608132/work
 text-unidecode==1.3
 textblob==0.15.3
-textdistance @ file:///tmp/build/80754af9/textdistance_1612461398012/work
-thinc==8.0.8
 virtualenv==20.8.1
