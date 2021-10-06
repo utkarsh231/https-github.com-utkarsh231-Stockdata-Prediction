@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="static\form.css">
+        <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+         
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <title>Stock Data Prediction</title>
+
+       
+    </head>
+   <body>
+       <div class="header">
+            <div class="inner_header">
+                <div class ="logo_container">
+                    <img src="static\logo_edited.jpg" alt="logo">
+                    <!--<h1>STOCK<span>PREDICTION</span></h1>-->
+                </div>
+
+
+                <ul class=" navigation">
+                    <h2> STOCKDATA PREDICTION </h2>
+
+                </ul>
+                
+            </div>
+       </div>
+
+       <body style="background-color:#1F2833;">
+        <div class="container">
+        
+            <p>&nbsp;</p>	
+            <form class=" m-auto" action="{{url_for('predict')}} "method="post">
+                <center>
+                <h3 >STOCKDATA <span>PREDICTION</span></h3>
+            <br>
+                </center>
+                <div class="form-group">
+            <center>
+            <table style="padding: 10px; width: 40%">
+                    <tr>
+                <td style="padding: 10px; width: 40%; font-family: 'Montserrat'; font-size:20pt; color: #66FCF1;"><label>Review Text:</label>
+                <input class="form-control" type="text" name="text" placeholder=" text" required="required"></td>
+                </tr>
+                <tr>
+                <td style="padding: 10px; width: 40%; font-family: 'Montserrat'; font-size:20pt;color: #66FCF1;"><label>Opening Value:</label>
+                    <input class="form-control" type="text" name="open" placeholder=" open"  required="required"></td>
+                    </tr>
+            </table>
+            </center>
+                </div>  
+                <!-- Show button -->
+            <center>
+                <div class="button_cont" align="center" >
+            
+                    <button type="submit" style="color: #C5C6C7 ;"><strong>PREDICT</strong></button>
+            </a>
+            </div>
+            </form> 
+            </center>
+            <p>&nbsp;</p>
+            <center>
+            <h2 style="color: #66FCF1;"><u>{{prediction_text}}</u></h2>
+            </center>
+	        <p>&nbsp;</p>
+        	<p>&nbsp;</p>
+	        </center>
+          
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+   </body>
+</html>
